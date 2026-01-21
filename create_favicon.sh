@@ -3,7 +3,7 @@
 # Script to convert MOCFlow logo to favicon
 # Creates multiple sizes and formats for best browser compatibility
 
-LOGO="assets/favicons/favicon_logo.png"
+LOGO="assets/favicons/favicon_logo_512x512.png"
 OUTPUT_DIR="assets/favicons"
 
 # Create output directory
@@ -20,7 +20,7 @@ create_favicon() {
 }
 
 # Create various favicon sizes
-echo "Creating favicon sizes from favicon_logo.png..."
+echo "Creating favicon sizes from favicon_logo_512x512.png..."
 
 # 16x16 (standard favicon)
 create_favicon 16 "$OUTPUT_DIR/favicon-16x16.png"
@@ -34,7 +34,7 @@ create_favicon 96 "$OUTPUT_DIR/favicon-96x96.png"
 # 192x192 (Android)
 create_favicon 192 "$OUTPUT_DIR/android-chrome-192x192.png"
 
-# 512x512 (Android) - will upscale from 124x124, but should be fine
+# 512x512 (Android) - using high-quality 512x512 source
 create_favicon 512 "$OUTPUT_DIR/android-chrome-512x512.png"
 
 # Apple touch icon (180x180)
