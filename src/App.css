@@ -105,7 +105,7 @@ body {
 .description-section {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-md);
   padding-top: var(--spacing-xs);
 }
 
@@ -114,7 +114,7 @@ body {
   color: var(--color-text);
   margin: 0;
   padding: 0;
-  text-align: left;
+  text-align: center;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -141,7 +141,7 @@ body {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
-  text-align: left;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -191,7 +191,7 @@ body {
 .workflow-steps {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 2rem;
 }
 
 .workflow-step {
@@ -355,7 +355,7 @@ body {
 
   .workflow-steps {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    gap: 2rem;
   }
 
   .features-grid {
