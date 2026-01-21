@@ -20,19 +20,11 @@ function App() {
           className="wordmark-header"
         />
         <p className="subtitle">
-          Build, deconstruct, and rebuild Alternate MOCs with ease
+          Build, deconstruct, and rebuild<br className="mobile-break" /> alternate MOCs with ease!
         </p>
       </header>
 
       <main className="main-content">
-        <div className="hero-section">
-          <div className="status-card">
-            <div className="status-icon">🚧</div>
-            <h2>Under Development</h2>
-            <p>I'm working hard to bring you an amazing experience. Please check back soon!</p>
-          </div>
-        </div>
-
         <div className="content-layout">
           <div className="description-section">
             <h3>Why I Made It</h3>
@@ -125,7 +117,10 @@ function App() {
           className="wordmark"
         />
         <p className="footer-text">
-          Powered by <strong>Rebrickable</strong>
+          Created by <strong>Scoty Stobbe</strong>
+        </p>
+        <p className="footer-text">
+          Powered by <strong>Rebrickable®</strong>
         </p>
         <p className="copyright">© 2026 MOCFlow. All rights reserved.</p>
       </footer>
