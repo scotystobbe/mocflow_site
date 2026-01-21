@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Icon from '@mdi/react';
 import { 
@@ -11,6 +11,28 @@ import {
 } from '@mdi/js';
 
 function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+    if (!isMobile) return; // Don't hide on desktop
+    
+    let ticking = false;
+    
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setIsScrolled(window.scrollY > 100);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="app">
       <header className="header">
@@ -19,7 +41,7 @@ function App() {
           alt="MOCFlow" 
           className="wordmark-header"
         />
-        <p className="subtitle">
+        <p className={`subtitle ${isScrolled ? 'hidden' : ''}`}>
           Build, deconstruct, and<br className="mobile-break" />  rebuild Alternate MOCs with ease!
         </p>
       </header>
