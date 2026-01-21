@@ -29,7 +29,7 @@ function App() {
           <div className="status-card">
             <div className="status-icon">🚧</div>
             <h2>Under Development</h2>
-            <p>We're working hard to bring you an amazing experience. Please check back soon!</p>
+            <p>I'm working hard to bring you an amazing experience. Please check back soon!</p>
           </div>
         </div>
 

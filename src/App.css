@@ -189,12 +189,6 @@ body {
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.workflow-step:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 .step-number {
@@ -232,13 +226,7 @@ body {
   border-radius: var(--border-radius);
   padding: var(--spacing-md);
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: var(--shadow-sm);
-}
-
-.feature-item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 .feature-icon {
