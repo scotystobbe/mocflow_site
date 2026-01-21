@@ -3,7 +3,7 @@
 # Script to convert MOCFlow logo to favicon
 # Creates multiple sizes and formats for best browser compatibility
 
-LOGO="assets/mocflow_logo.png"
+LOGO="assets/favicons/favicon_logo.png"
 OUTPUT_DIR="assets/favicons"
 
 # Create output directory
@@ -16,16 +16,16 @@ create_favicon() {
     local output=$2
     local radius=$3
     
-    # Resize the logo
+    # Resize the logo to the target size
     magick "$LOGO" -resize ${size}x${size} -background none -gravity center -extent ${size}x${size} temp_img.png
     
-    # Create a mask with rounded corners (white inside, transparent outside)
-    magick -size ${size}x${size} xc:white -fill black -draw "roundrectangle 0,0 $((size-1)),$((size-1)) $radius,$radius" -alpha extract -negate temp_mask.png
+    # Create a rounded rectangle mask (white = visible, black = transparent)
+    magick -size ${size}x${size} xc:black -fill white -draw "roundrectangle 0,0 $((size-1)),$((size-1)) $radius,$radius" temp_mask.png
     
-    # Apply the mask
+    # Apply the mask using CopyOpacity
     magick temp_img.png temp_mask.png -alpha off -compose CopyOpacity -composite "$output"
     
-    # Clean up
+    # Clean up temporary files
     rm -f temp_img.png temp_mask.png
 }
 
