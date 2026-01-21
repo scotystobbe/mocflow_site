@@ -105,15 +105,18 @@ body {
 .description-section {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-xs);
 }
 
 .description-section h3 {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   color: var(--color-text);
-  margin-bottom: var(--spacing-md);
+  margin: 0;
+  padding: 0;
   text-align: left;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .description {
