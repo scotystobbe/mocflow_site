@@ -3,7 +3,7 @@
 # Script to convert MOCFlow logo to favicon
 # Creates multiple sizes and formats for best browser compatibility
 
-LOGO="assets/favicons/favicon_logo_512x512.png"
+LOGO="assets/favicons/favicon.png"
 OUTPUT_DIR="assets/favicons"
 
 # Create output directory
@@ -20,7 +20,7 @@ create_favicon() {
 }
 
 # Create various favicon sizes
-echo "Creating favicon sizes from favicon_logo_512x512.png..."
+echo "Creating favicon sizes from favicon.png..."
 
 # 16x16 (standard favicon)
 create_favicon 16 "$OUTPUT_DIR/favicon-16x16.png"

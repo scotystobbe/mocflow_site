@@ -59,7 +59,7 @@ body {
 }
 
 .wordmark-header {
-  max-width: 200px;
+  max-width: 300px;
   width: auto;
   height: auto;
   margin-top: 0;
@@ -243,19 +243,19 @@ body {
 }
 
 .workflow-step:nth-child(1) .step-number {
-  background: #FFD700; /* LEGO Yellow */
+  background: #e8b86e; /* Yellow */
 }
 
 .workflow-step:nth-child(2) .step-number {
-  background: #0066CC; /* LEGO Blue */
+  background: #5f7b89; /* Blue */
 }
 
 .workflow-step:nth-child(3) .step-number {
-  background: #DC143C; /* LEGO Red */
+  background: #b56953; /* Red */
 }
 
 .workflow-step:nth-child(4) .step-number {
-  background: #00A859; /* LEGO Green */
+  background: #6faca4; /* Green */
 }
 
 .workflow-step p {
@@ -290,27 +290,27 @@ body {
 }
 
 .feature-item:nth-child(1) .feature-icon {
-  color: #0066CC; /* LEGO Blue */
+  color: #5f7b89; /* Blue */
 }
 
 .feature-item:nth-child(2) .feature-icon {
-  color: #FFD700; /* LEGO Yellow */
+  color: #e8b86e; /* Yellow */
 }
 
 .feature-item:nth-child(3) .feature-icon {
-  color: #FF6B35; /* LEGO Orange */
+  color: #c98a5f; /* Muted Orange */
 }
 
 .feature-item:nth-child(4) .feature-icon {
-  color: #DC143C; /* LEGO Red */
+  color: #b56953; /* Red */
 }
 
 .feature-item:nth-child(5) .feature-icon {
-  color: #00A859; /* LEGO Green */
+  color: #6faca4; /* Green */
 }
 
 .feature-item:nth-child(6) .feature-icon {
-  color: #0066CC; /* LEGO Blue */
+  color: #5f7b89; /* Blue */
 }
 
 .feature-item p {
@@ -365,7 +365,7 @@ body {
   }
 
   .wordmark-header {
-    max-width: 250px;
+    max-width: 400px;
   }
 
   .main-content {
