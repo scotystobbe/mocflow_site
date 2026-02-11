@@ -62,7 +62,7 @@ function App() {
             </p>
             <p className="description">
             As I started building more Alternate MOCs, I noticed an area that could use some help to ease the process of building, deconstructing,
-            and rebuilding. When you build the official set first, you will then need to tear it all down in order to build the Alternate MOC.
+            and rebuilding. When you build the official set first you will then need to tear it all down in order to build the Alternate MOC.
             If it's a smaller set, this isn't a big deal. You can fairly easily find the pieces you need in a pile of 300 or so LEGO pieces.
             But if you're working with a set of 1,000+ pieces this quickly becomes unmanageable.
             </p>
