@@ -51,7 +51,7 @@ function App() {
           <div className="description-section">
             <h3>Why I Made It</h3>
             <p className="description">
-              One of the coolest things about LEGO is that you can take the bricks apart and rebuild them endlessly. 
+              One of the coolest things about LEGO in my opinion is that you can take the bricks apart and rebuild them endlessly. 
               Just six of the classic 2x4 LEGO bricks in the same color can be assembled in 915 million unique combinations.
             </p>
             <p className="description">
